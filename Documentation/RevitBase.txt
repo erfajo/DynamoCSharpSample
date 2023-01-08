@@ -1,0 +1,8 @@
+﻿::Common
+DynamoCSharpSample.Common.Document.Current
+
+::Elements
+DynamoCSharpSample.Elements.FamilyInstance.IsHandFlipped
+DynamoCSharpSample.Elements.FamilyInstance.IsFaceFlipped
+DynamoCSharpSample.Elements.FamilyInstance.HandFlipped
+DynamoCSharpSample.Elements.FamilyInstance.FaceFlipped

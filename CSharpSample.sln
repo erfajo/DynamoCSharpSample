@@ -1,0 +1,73 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RevitBase", "RevitBase\RevitBase.csproj", "{3EA6DB20-E10F-4AA4-B251-CBE7FED0E120}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RevitExtensible", "RevitExtensible\RevitExtensible.csproj", "{6D5BAD9A-CBB6-4EEC-A1E3-3CF0E00AC21A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoreBase", "CoreBase\CoreBase.csproj", "{49EB389A-B3D6-41B7-80DE-19483D69EC56}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoreExtensible", "CoreExtensible\CoreExtensible.csproj", "{BA8E3DCB-26AB-4E96-9DD6-375E156EC880}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Icon", "Icon\Icon.csproj", "{7F7019B5-36DB-42CB-83D5-E1F8ECE798A3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Documentation", "Documentation\Documentation.csproj", "{5C2124AE-893D-4FC6-AB7C-1EB223D87EC5}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "SharedRevitBase", "SharedRevitBase\SharedRevitBase.shproj", "{ED7BA524-5DE8-4CAE-BD32-B898FB654427}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "SharedCoreBase", "SharedCoreBase\SharedCoreBase.shproj", "{EEA430DB-3F81-44B2-9588-403AD981E6BC}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "SharedCoreExtensible", "SharedCoreExtensible\SharedCoreExtensible.shproj", "{ED85417D-39E6-4C3B-9CAF-C73A4F0C9FEC}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "SharedRevitExtensible", "SharedRevitExtensible\SharedRevitExtensible.shproj", "{E25469EB-807A-4E22-A544-D2653872A6D8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3EA6DB20-E10F-4AA4-B251-CBE7FED0E120}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EA6DB20-E10F-4AA4-B251-CBE7FED0E120}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EA6DB20-E10F-4AA4-B251-CBE7FED0E120}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EA6DB20-E10F-4AA4-B251-CBE7FED0E120}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D5BAD9A-CBB6-4EEC-A1E3-3CF0E00AC21A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D5BAD9A-CBB6-4EEC-A1E3-3CF0E00AC21A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D5BAD9A-CBB6-4EEC-A1E3-3CF0E00AC21A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D5BAD9A-CBB6-4EEC-A1E3-3CF0E00AC21A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49EB389A-B3D6-41B7-80DE-19483D69EC56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49EB389A-B3D6-41B7-80DE-19483D69EC56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49EB389A-B3D6-41B7-80DE-19483D69EC56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49EB389A-B3D6-41B7-80DE-19483D69EC56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA8E3DCB-26AB-4E96-9DD6-375E156EC880}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA8E3DCB-26AB-4E96-9DD6-375E156EC880}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA8E3DCB-26AB-4E96-9DD6-375E156EC880}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA8E3DCB-26AB-4E96-9DD6-375E156EC880}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F7019B5-36DB-42CB-83D5-E1F8ECE798A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F7019B5-36DB-42CB-83D5-E1F8ECE798A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F7019B5-36DB-42CB-83D5-E1F8ECE798A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C2124AE-893D-4FC6-AB7C-1EB223D87EC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C2124AE-893D-4FC6-AB7C-1EB223D87EC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C2124AE-893D-4FC6-AB7C-1EB223D87EC5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {78C4CD1A-F1FA-4E9D-AEAB-ADAC93364C21}
+	EndGlobalSection
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		SharedCoreBase\SharedCoreBase.projitems*{3ea6db20-e10f-4aa4-b251-cbe7fed0e120}*SharedItemsImports = 5
+		SharedRevitBase\SharedRevitBase.projitems*{3ea6db20-e10f-4aa4-b251-cbe7fed0e120}*SharedItemsImports = 5
+		SharedCoreBase\SharedCoreBase.projitems*{49eb389a-b3d6-41b7-80de-19483d69ec56}*SharedItemsImports = 5
+		SharedCoreExtensible\SharedCoreExtensible.projitems*{6d5bad9a-cbb6-4eec-a1e3-3cf0e00ac21a}*SharedItemsImports = 5
+		SharedRevitExtensible\SharedRevitExtensible.projitems*{6d5bad9a-cbb6-4eec-a1e3-3cf0e00ac21a}*SharedItemsImports = 5
+		SharedCoreExtensible\SharedCoreExtensible.projitems*{ba8e3dcb-26ab-4e96-9dd6-375e156ec880}*SharedItemsImports = 5
+		SharedRevitExtensible\SharedRevitExtensible.projitems*{e25469eb-807a-4e22-a544-d2653872a6d8}*SharedItemsImports = 13
+		SharedRevitBase\SharedRevitBase.projitems*{ed7ba524-5de8-4cae-bd32-b898fb654427}*SharedItemsImports = 13
+		SharedCoreExtensible\SharedCoreExtensible.projitems*{ed85417d-39e6-4c3b-9caf-c73a4f0c9fec}*SharedItemsImports = 13
+		SharedCoreBase\SharedCoreBase.projitems*{eea430db-3f81-44b2-9588-403ad981e6bc}*SharedItemsImports = 13
+	EndGlobalSection
+EndGlobal

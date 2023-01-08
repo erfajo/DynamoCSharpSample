@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<doc>
+  <assembly>
+    <name>CSharpRevitBase</name>
+  </assembly>
+  <namespaces>
+    <namespace name="DynamoCSharpSample.Common">
+      <category>DynamoCSharpSample.Common</category>
+    </namespace>
+  </namespaces>
+  <namespaces>
+    <namespace name="DynamoCSharpSample.Elements">
+      <category>DynamoCSharpSample.Elements</category>
+    </namespace>
+  </namespaces>
+</doc>

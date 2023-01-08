@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<doc>
+  <assembly>
+    <name>CSharpCoreBase</name>
+  </assembly>
+  <namespaces>
+    <namespace name="DynamoCSharpSample.Common">
+      <category>DynamoCSharpSample.Common</category>
+    </namespace>
+  </namespaces>
+</doc>

@@ -5,7 +5,14 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using Autodesk.DesignScript.Runtime;
+using Autodesk.Revit.DB;
+using Dynamo.Graph.Nodes;
+using DynamoSample.Notifications;
+using Revit.Elements;
+using RevitServices.Persistence;
+using dynElement = Revit.Elements.Element;
 using dynFamilyInstance = Revit.Elements.FamilyInstance;
+using rvtElement = Autodesk.Revit.DB.Element;
 using rvtFamilyInstance = Autodesk.Revit.DB.FamilyInstance;
 
 namespace DynamoCSharpSample.Elements
@@ -15,6 +22,31 @@ namespace DynamoCSharpSample.Elements
         #region Constructor
         private FamilyInstance() { }
         #endregion Constructor
+
+
+        #region How notifications can be used
+        /// <summary>
+        /// Get element by id.
+        /// </summary>
+        /// <param name="id">Id as integer value.</param>
+        /// <returns name="Element">Element.</returns>
+        /// <search>element,id,elementid</search>
+        [NodeCategory("Query")]
+        public static dynElement ById(int id)
+        {
+            var document = DocumentManager.Instance.CurrentDBDocument;
+            try
+            {
+                var elementId = new ElementId(id);
+                var element = document.GetElement(elementId);
+                return element.ToDSType(true);
+            }
+            catch (System.NullReferenceException)
+            {
+                throw new System.Exception(Notifications.InvalidElementId);
+            }            
+        }
+        #endregion How notifications can be used
 
 
         #region Boolean flipped methods for elements

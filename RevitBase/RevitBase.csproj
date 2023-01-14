@@ -44,6 +44,10 @@
     <PackageReference Include="MSBuildTasks" Version="1.5.0.235" PrivateAssets="all" IncludeAssets="compile; native; contentfiles; analyzers; buildtransitive" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Include="..\Resources\Notifications\Notifications.Designer.cs" Link="Notifications\Notifications.Designer.cs" />
+  </ItemGroup>
+
   <Import Project="..\SharedCoreBase\SharedCoreBase.projitems" Label="Shared" />
   <Import Project="..\SharedRevitBase\SharedRevitBase.projitems" Label="Shared" />
 
@@ -111,10 +115,10 @@
     <ReplaceFileText InputFilename="Properties\masterCore.json" OutputFilename="Properties\Core_pkg.json" MatchExpression="xxx" ReplacementText="$(Major).$(Minor).$(Revision).$(Build)" />
     <ReplaceFileText InputFilename="Properties\masterRevit.json" OutputFilename="Properties\Revit_pkg.json" MatchExpression="xxx" ReplacementText="$(Major).$(Minor).$(Revision).$(Build)" />
     <!--CSharpRevitBase customization dll -->
-    <GenerateResource SdkToolsPath="$(TargetFrameworkSDKToolsDirectory)" UseSourcePath="true" Sources="$(SolutionDir)\Icon\RevitBase.resx" OutputResources="$(ProjectDir)\obj\Debug\CSharpRevitBaseImages.resources" References="$(SystemDrawingDllPath)" />
+    <GenerateResource SdkToolsPath="$(TargetFrameworkSDKToolsDirectory)" UseSourcePath="true" Sources="$(SolutionDir)\Resources\RevitBase.resx" OutputResources="$(ProjectDir)\obj\Debug\CSharpRevitBaseImages.resources" References="$(SystemDrawingDllPath)" />
     <AL SdkToolsPath="$(TargetFrameworkSDKToolsDirectory)" TargetType="library" EmbedResources="$(ProjectDir)\obj\Debug\CSharpRevitBaseImages.resources" OutputAssembly="$(OutDir)CSharpRevitBase.customization.dll" ProductName="$(Product)" Title="$(Title)" Description="$(Description)" Copyright="$(Copyright)" Version="$(Major).$(Minor).$(Revision).$(Build)" />
     <!-- Package customization dll - however, this does really not set default icons -->
-    <GenerateResource SdkToolsPath="$(TargetFrameworkSDKToolsDirectory)" UseSourcePath="true" Sources="$(SolutionDir)\Icon\Package.resx" OutputResources="$(ProjectDir)\obj\Debug\CSharpPackageImages.resources" References="$(SystemDrawingDllPath)" />
+    <GenerateResource SdkToolsPath="$(TargetFrameworkSDKToolsDirectory)" UseSourcePath="true" Sources="$(SolutionDir)\Resources\Package.resx" OutputResources="$(ProjectDir)\obj\Debug\CSharpPackageImages.resources" References="$(SystemDrawingDllPath)" />
     <AL SdkToolsPath="$(TargetFrameworkSDKToolsDirectory)" TargetType="library" EmbedResources="$(ProjectDir)\obj\Debug\CSharpPackageImages.resources" OutputAssembly="$(OutDir)Package.customization.dll" ProductName="$(Product)" Title="$(Title)" Description="$(Description)" Copyright="$(Copyright)" Version="$(Major).$(Minor).$(Revision).$(Build)" />
   </Target>
  

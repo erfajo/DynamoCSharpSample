@@ -2,6 +2,7 @@
 DynamoCSharpSample.Common.Document.Current
 
 ::Elements
+DynamoCSharpSample.Elements.FamilyInstance.ById
 DynamoCSharpSample.Elements.FamilyInstance.IsHandFlipped
 DynamoCSharpSample.Elements.FamilyInstance.IsFaceFlipped
 DynamoCSharpSample.Elements.FamilyInstance.HandFlipped

@@ -32,6 +32,10 @@
     <PackageReference Include="MSBuildTasks" Version="1.5.0.235" PrivateAssets="all" IncludeAssets="compile; native; contentfiles; analyzers; buildtransitive" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Include="..\Resources\Notifications\Notifications.Designer.cs" Link="Notifications\Notifications.Designer.cs" />
+  </ItemGroup>
+
   <Import Project="..\SharedCoreExtensible\SharedCoreExtensible.projitems" Label="Shared" />
 
   <ItemGroup Label="dotNet dependencies">
@@ -96,7 +100,7 @@
     <!-- Write AssemblyInfo -->
     <AssemblyInfo CodeLanguage="CS" OutputFile="Properties\AssemblyInfo.cs" AssemblyProduct="$(Product)" AssemblyTitle="$(Title)" AssemblyDescription="$(Description)" AssemblyCopyright="$(Copyright)" AssemblyVersion="$(Major).$(Minor).$(Revision).$(Build)" AssemblyFileVersion="$(Major).$(Minor).$(Revision).$(Build)" />
     <!-- CSharpCoreExtensible customization dll -->
-    <GenerateResource SdkToolsPath="$(TargetFrameworkSDKToolsDirectory)" UseSourcePath="true" Sources="$(SolutionDir)\Icon\CoreExtensible.resx" OutputResources="$(ProjectDir)\obj\Debug\CSharpCoreExtensibleImages.resources" References="$(SystemDrawingDllPath)" />
+    <GenerateResource SdkToolsPath="$(TargetFrameworkSDKToolsDirectory)" UseSourcePath="true" Sources="$(SolutionDir)\Resources\CoreExtensible.resx" OutputResources="$(ProjectDir)\obj\Debug\CSharpCoreExtensibleImages.resources" References="$(SystemDrawingDllPath)" />
     <AL SdkToolsPath="$(TargetFrameworkSDKToolsDirectory)" TargetType="library" EmbedResources="$(ProjectDir)\obj\Debug\CSharpCoreExtensibleImages.resources" OutputAssembly="$(OutDir)CSharpCoreExtensible.customization.dll" ProductName="$(Product)" Title="$(Title)" Description="$(Description)" Copyright="$(Copyright)" Version="$(Major).$(Minor).$(Revision).$(Build)" />
   </Target>
 

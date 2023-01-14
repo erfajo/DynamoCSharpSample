@@ -11,8 +11,8 @@
 [assembly: System.Reflection.AssemblyDescription("Node Package for Dynamo")]
 [assembly: System.Reflection.AssemblyProduct("DynamoSample")]
 [assembly: System.Reflection.AssemblyCopyright("Copyright(c) 2014")]
-[assembly: System.Reflection.AssemblyFileVersion("212.0.0.8408")]
-[assembly: System.Reflection.AssemblyVersion("212.0.0.8408")]
+[assembly: System.Reflection.AssemblyFileVersion("212.0.0.8414")]
+[assembly: System.Reflection.AssemblyVersion("212.0.0.8414")]
 [assembly: System.Reflection.AssemblyTitle("DynamoSample Revit Nodes")]
 
 

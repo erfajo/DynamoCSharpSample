@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoreBase", "CoreBase\CoreBa
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoreExtensible", "CoreExtensible\CoreExtensible.csproj", "{BA8E3DCB-26AB-4E96-9DD6-375E156EC880}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Icon", "Icon\Icon.csproj", "{7F7019B5-36DB-42CB-83D5-E1F8ECE798A3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Resources", "Resources\Resources.csproj", "{7F7019B5-36DB-42CB-83D5-E1F8ECE798A3}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Documentation", "Documentation\Documentation.csproj", "{5C2124AE-893D-4FC6-AB7C-1EB223D87EC5}"
 EndProject
